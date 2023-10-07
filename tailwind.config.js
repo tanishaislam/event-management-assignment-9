@@ -6,7 +6,12 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        norican: " 'Norican', cursive",
+        cormorant: "'Cormorant Upright', serif"
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
