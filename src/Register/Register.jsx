@@ -1,16 +1,21 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Components/providers/AuthProviders";
 
 
 const Register = () => {
     const {createUser}= useContext(AuthContext);
+    const [passwordError, setPasswordError]= useState('');
     const handleRegister =(e)=>{
         e. preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log( name, email, password)
+        if (!/^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*#?&])[a-z\d@$!%*#?&]{6,}$/.test(password)) {
+            setPasswordError('please write a valid password')
+            return;
+        }
         createUser(email, password)
         .then(result =>{
             console.log(result.user)
@@ -49,10 +54,13 @@ const Register = () => {
                         <span className="label-text text-lg font-semibold">Password</span>
                     </label>
                     <input type="password" name="password" placeholder="password" className="input input-bordered text-black" required />
+                    {
+                        passwordError? <p className="text-red-500 text-start">{passwordError}</p>: ''
+                    }
                     <label className="label">
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
-                    </div>
+                    </div>                    
                     <div className="form-control mt-6">
                     <button className="btn btn-primary bg-gradient-to-r from-pink-500 to-blue-500 hover:from-blue-500 hover:to-pink-500 text-white border-none">Register</button>
                     <p className="text-center text-black py-6">Already have an account ?<Link to="/login" className="text-blue-700 font-bold"> Please login</Link></p>

@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Components/providers/AuthProviders";
-
+import swal from 'sweetalert';
 
 const Login = () => {
     const {signInUser, signInWithGoogle}= useContext(AuthContext);
@@ -16,6 +16,7 @@ const Login = () => {
         })
         .catch(error =>{
             console.error(error)
+            swal(error.message)
         })
     }
 
@@ -26,6 +27,7 @@ const Login = () => {
         })
         .catch(error =>{
             console.error(error)
+            
         })
     }
 
@@ -52,6 +54,7 @@ const Login = () => {
                         <span className="label-text text-lg font-semibold">Password</span>
                     </label>
                     <input type="password" placeholder="password" name="password" className="input input-bordered text-black" required />
+
                     <label className="label">
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
