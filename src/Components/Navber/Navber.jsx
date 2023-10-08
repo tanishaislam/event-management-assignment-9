@@ -7,8 +7,8 @@ const Navber = () => {
         <li><NavLink to='/services'>Services</NavLink></li>
     </>
     return (
-        <div className="container mx-auto">
-            <div className="navbar bg-base-100">
+        <div className="bg-pink-200">
+            <div className="navbar  container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -18,7 +18,7 @@ const Navber = () => {
                 {navlinks}
                 </ul>
                 </div>
-                <a className="text-3xl font-norican font-bold">Social <span className="text-pink-400">Events</span></a>
+                <a className="text-3xl font-norican font-bold">Social <span className="text-pink-500">Events</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -26,7 +26,7 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-pink-400 text-white">Login</a>
+                <a className="btn bg-pink-500 text-white">Login</a>
             </div>
             </div>
         </div>

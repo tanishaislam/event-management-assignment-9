@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Weddings",
+      "image": "https://i.ibb.co/2vHPsNV/wedding-1.jpg",
+      "price": 1500,
+      "description": "No Fairytale Wedding is Complete Without the Perfect Location",
+      "Details": "You want the wedding of your dreams without compromise. A ceremony expressing the heart. Food which is delicious and tempts seconds. Styling where guests go wow. A room which allows you to celebrate. A ceremony expressing the heart. Food which is delicious and tempts seconds. Styling where guests go wow. A room which allows you to celebrate."
+    },
+    {
+      "id": 2,
+      "name": "Birthday Parties",
+      "image": "https://i.ibb.co/WGfJNm5/birdthday.jpg",
+      "price": 1800,
+      "description": "Birthdays bring joy and happiness to our lives, and birthday parties only add to that joy",
+      "Details": "Birthdays bring joy and happiness to our lives, and birthday parties only add to that joy... How about any other birthday? It doesnt have to be a milestone to hold a party! Why not invite your friends over to share in the good-natured fun and celebration of the day you entered the world? Its easy to do with an EventCreate website, which provides full functionality, including invitations, RSVPs, photos and themes to help to set the tone for that special party!"
+    },
+    {
+      "id": 3,
+      "name": "Anniversaries",
+      "image": "https://i.ibb.co/brwJJ5k/anivarsary.jpg",
+      "price": 2100,
+      "description": "Enjoy our Moments",
+      "Details": "No matter if you have been dating for a few years or married for a decade, an anniversary is something to celebrate. Its a day that holds a special place in your heart (and calendar) because it marks your decision to spend your life together. From sweet to funny, every couple has a different style of expressing their love.No matter if you have been dating for a few years or married for a decade, an anniversary is something to celebrate. Its a day that holds a special place in your heart (and calendar) because it marks your decision to spend your life together. From sweet to funny "
+    },
+    {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/yStM9sG/engagement.jpg",
+        "price": 5000,
+        "description": "An engagement party is a great way to share this exciting news",
+        "Details": "Congratulations, you're engaged! It's now time to kick off the wedding celebrations with a bang. An engagement party is a great way to share this exciting news and get family and friends together to commemorate your forthcoming union. An engagement party is a great way to share this exciting news and get family and friends together to commemorate your forthcoming union."
+      },
+      {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/7RSqfHB/retirement.webp",
+        "price": 3000,
+        "description": "celebrate this day very happily",
+        "Details": "Before you begin celebrating your guest of honor, send invitations to all party attendees. Invitations set the tone for your party, so we suggest using bright colors and conversational language. You can also choose a theme for your online retirement party invitations, such as tropical vacation, family-oriented, or retro.You can also choose a theme for your online retirement party invitations, such as tropical vacation, family-oriented, or retro."
+      },
+      {
+        "id": 6,
+        "name": "Baby shower",
+        "image": "https://i.ibb.co/BV9KWnV/bady.jpg",
+        "price": 7000,
+        "description": "Expecting parents arent always next door to family and friends.",
+        "Details": "Expecting parents arent always next door to family and friends. However, we can still be a little closer in spirit! Here are good reasons to choose an online baby shower to either complement or replace a traditional shower.we can still be a little closer in spirit! Here are good reasons to choose an online baby shower to either complement or replace a traditional shower."
+      }
+  ]
