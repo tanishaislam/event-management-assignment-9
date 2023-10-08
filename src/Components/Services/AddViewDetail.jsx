@@ -1,5 +1,6 @@
 
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 const AddViewDetail = ({details}) => {
     const { name, image, price, Details} = details;
     return (
@@ -11,7 +12,7 @@ const AddViewDetail = ({details}) => {
                 <p className="text-xl">Price: {price} $</p>
                 <p className="max-w-xl text-lg font-semibold pb-5">Details: {Details}</p>
                 <div className="card-actions ">
-                <button className="btn btn-primary bg-pink-400 border-pink-400 text-white mb-10">Go back home</button>
+                <Link to='/'><button className="btn btn-primary bg-pink-400 border-pink-400 text-white mb-10">Go back home</button></Link>
                 </div>
             </div>
             </div>

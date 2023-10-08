@@ -12,9 +12,9 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log( name, email, password)
-        if (!/^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*#?&])[a-z\d@$!%*#?&]{6,}$/.test(password)) {
-            setPasswordError('please write a valid password')
-            return;
+        if (!/^(?=.*[a-z])(?=.*[@$!%*#?&])[a-z\d@$!%*#?&]{6,}$/.test(password)) {
+          return  setPasswordError('please write a valid password')
+            
         }
         createUser(email, password)
         .then(result =>{

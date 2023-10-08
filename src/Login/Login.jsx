@@ -1,10 +1,13 @@
 import { useContext} from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Components/providers/AuthProviders";
 import swal from 'sweetalert';
 
 const Login = () => {
     const {signInUser, signInWithGoogle}= useContext(AuthContext);
+    const locations = useLocation();
+    const navigate = useNavigate();
+    console.log(locations)
     const handleLogin =(e)=>{
         e. preventDefault();
         const email = e.target.email.value;
@@ -13,6 +16,7 @@ const Login = () => {
         signInUser(email, password)
         .then(result =>{
             console.log(result.user)
+            navigate(locations?.state ? locations.state : '/')
         })
         .catch(error =>{
             console.error(error)

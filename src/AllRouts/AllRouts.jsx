@@ -4,11 +4,14 @@ import Header from "../Components/Header/Header";
 import ViewDetails from "../Components/Services/ViewDetails";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import ErrorPage from "./ErrorPage";
+import PrivateRoutes from "../Components/MainLayout/PrivateRoutes";
 
 const AllRouts = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/',
@@ -17,7 +20,7 @@ const AllRouts = createBrowserRouter([
         },
         {
           path: '/service/:id',
-          element:<ViewDetails></ViewDetails>,
+          element:<PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>,
           loader: () => fetch('/service.json')
         },
         {
