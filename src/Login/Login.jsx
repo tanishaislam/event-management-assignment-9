@@ -4,12 +4,19 @@ import { AuthContext } from "../Components/providers/AuthProviders";
 
 
 const Login = () => {
-    const { signInWithGoogle}= useContext(AuthContext);
+    const {signInUser, signInWithGoogle}= useContext(AuthContext);
     const handleLogin =(e)=>{
         e. preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password)
+        signInUser(email, password)
+        .then(result =>{
+            console.log(result.user)
+        })
+        .catch(error =>{
+            console.error(error)
+        })
     }
 
     const handleGoogleSignIn = ()=>{
@@ -24,7 +31,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className="hero lg:h-[95vh]" style={{backgroundImage: 'url(https://i.ibb.co/gg3vK7P/abstract-soft-pink-background-modern-and-clean-banner-landing-page-concept-with-pastel-color-free-ve.jpg)'}}>
+            <div className="hero lg:h-[90vh]" style={{backgroundImage: 'url(https://i.ibb.co/gg3vK7P/abstract-soft-pink-background-modern-and-clean-banner-landing-page-concept-with-pastel-color-free-ve.jpg)'}}>
             <div className="hero-overlay bg-pink-400 bg-opacity-30"></div>
             <div className="hero-content text-center text-neutral-content">
             <div className="">
