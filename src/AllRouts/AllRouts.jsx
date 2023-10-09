@@ -27,7 +27,7 @@ const AllRouts = createBrowserRouter([
         },
         {
           path: '/prisServices',
-          element: <PriService></PriService>
+          element: <PrivateRoutes><PriService></PriService></PrivateRoutes>
         },
         {
           path: '/contact',

@@ -27,7 +27,7 @@ const SomeService = () => {
                 <img className="h-full" src="https://i.ibb.co/wBzg0z0/opt-aboutcom-coeus-resources-content-migration-brides-proteus-5a5644794855b37a01361245-169-7ed53404b.jpg" alt="Pizza" />
             </div> 
             <div>
-                <img className="h-full" src="https://i.ibb.co/jTw31R4/istockphoto-494348664-170667a.jpg" alt="Pizza" />
+                <img className="h-full" src="https://i.ibb.co/vw76xyD/Baby-Shower-Outfit-Ideas.jpg" alt="Pizza" />
             </div> 
             <div>
                 <img className="h-full" src="https://i.ibb.co/w7Hx1Lq/istockphoto-1334542509-612x612.jpg" alt="Pizza" />
