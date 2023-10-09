@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import ErrorPage from "./ErrorPage";
 import PrivateRoutes from "../Components/MainLayout/PrivateRoutes";
+import ContactUs from "../Components/Services/ContactUs";
 
 const AllRouts = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const AllRouts = createBrowserRouter([
           path: '/service/:id',
           element:<PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>,
           loader: () => fetch('/service.json')
+        },
+        {
+          path: '/contact',
+          element: <ContactUs></ContactUs>
         },
         {
           path: '/login',
