@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 const Services = ({service}) => {
     return (
-        <div>
+        <div className="px-10">
             <h1 className="mt-20 text-5xl font-bold text-center mb-5 font-norican">Our Services</h1>
-            <p className="w-1/5 m-auto text-center mb-14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quod eaque suscipit iure voluptatem quibusdam quas!</p>
+            <p className="lg:w-1/5 md:w-1/2 w-auto m-auto text-center mb-14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quod eaque suscipit iure voluptatem quibusdam quas!</p>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mb-20 container mx-auto">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mb-20 container mx-auto ">
                 {
                     service.map(services => <AllServices key={services.id} services ={services}></AllServices>)
                 }

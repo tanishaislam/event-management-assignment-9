@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
 import Footer from "./Footer";
 import SomeService from "../SomeService/SomeService";
+import HomeContact from "../SomeService/HomeContact";
 
 const Header = () => {
     const service = useLoaderData();
@@ -11,6 +12,7 @@ const Header = () => {
             <Banner></Banner>
             <Services service ={service}></Services>
             <SomeService></SomeService>
+            <HomeContact></HomeContact>
             <Footer></Footer>
         </div>
     );

@@ -12,7 +12,7 @@ const Navber = () => {
     const navlinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About us</NavLink></li>
-        <li><NavLink to='/services'>Services</NavLink></li>
+        <li><NavLink to='/prisServices'>Services</NavLink></li>
         <li><NavLink to='/contact'>Contact Us</NavLink></li>
         <li><NavLink to='/login'>Login</NavLink></li>
     </>
