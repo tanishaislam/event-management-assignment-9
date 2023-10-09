@@ -3,7 +3,7 @@ import { BsFillEnvelopeFill} from 'react-icons/bs';
 const Address = () => {
     return (
         <div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mb-40 mt-20 gap-10 px-5">
+            <div data-aos="fade-up"  data-aos-duration="1000" className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 container mx-auto mb-40 mt-20 gap-10 px-5">
                 <div className='bg-pink-200 relative pt-24 pb-12 text-center flex justify-center mb-5'>
                     <h1 className='bg-blue-400 w-20 m-auto p-5 rounded-full absolute -top-10'>
                     <span className='text-4xl text-white'><AiFillHome></AiFillHome></span>

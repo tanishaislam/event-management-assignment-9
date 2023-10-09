@@ -17,7 +17,7 @@ const PriService = () => {
                     <div>
                         <h1 className="text-center text-4xl font-bold font-norican pt-24">Privious Clients</h1>
                     </div>
-                    <div className="flex  mt-20 items-center lg:flex-row md:flex-col flex-col">
+                    <div  data-aos="fade-up"  data-aos-duration="1000" className="flex  mt-20 items-center lg:flex-row md:flex-col flex-col">
                         <div className="w-full">
                         <img className="" src="https://i.ibb.co/2WQT6dn/64151-bridesmaids.jpg" alt="" />
                         </div>
@@ -30,7 +30,7 @@ const PriService = () => {
                             <button className="bg-pink-500 text-white py-3 px-7 text-lg font-semibold rounded-lg mt-8">See more</button>
                         </div>
                     </div>
-                    <div className="flex  mt-20 items-center lg:flex-row-reverse md:flex-col flex-col">
+                    <div data-aos="fade-up"  data-aos-duration="1000" className="flex  mt-20 items-center lg:flex-row-reverse md:flex-col flex-col">
                         <div className="w-full">
                             <img src="https://i.ibb.co/93bKJvF/wedding-weddings-natural-field.jpg" alt="" />
                         </div>
@@ -43,7 +43,7 @@ const PriService = () => {
                             <button className="bg-pink-500 text-white py-3 px-7 text-lg font-semibold rounded-lg mt-8">See more</button>
                         </div>
                     </div>
-                    <div className="flex  mt-20 items-center lg:flex-row md:flex-col flex-col">
+                    <div data-aos="fade-up"  data-aos-duration="1000" className="flex  mt-20 items-center lg:flex-row md:flex-col flex-col">
                         <div className="w-full" >
                         <img className="" src="https://i.ibb.co/N23h0pv/stock-photo-happy-kids-at-birthday-table.jpg" alt="" />
                         </div>
@@ -56,7 +56,7 @@ const PriService = () => {
                             <button className="bg-pink-500 text-white py-3 px-7 text-lg font-semibold rounded-lg mt-8">See more</button>
                         </div>
                     </div>
-                    <div className="flex  mt-20 items-center lg:flex-row-reverse md:flex-col flex-col">
+                    <div data-aos="fade-up"  data-aos-duration="1000" className="flex  mt-20 items-center lg:flex-row-reverse md:flex-col flex-col mb-20">
                         <div className="w-full">
                             <img src="https://i.ibb.co/4PNW78T/Wedding-Photo-of-a-Couple.jpg" alt="" />
                         </div>
